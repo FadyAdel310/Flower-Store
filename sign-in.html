@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css style sheets -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+
+    <!-- gooogle fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;500;600;700&family=Montserrat+Alternates:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/SIGNIN/main.css">
+    
+    <title>Flower Store</title>
+</head>
+<body>
+    <div class="sign-in">
+        <img src="./imgs/videoPic.png" alt="">
+        <div class="container">
+            <form method="post" >
+                <h2>login to your account</h2>
+                <div class="field">
+                    <input name="Email" class="email" type="email" placeholder="Your Email">
+                    <span class="invalid " tooltip="not valid">
+                        <i class="fa-solid fa-gear "></i>
+                    </span>
+                    <span class="valid " tooltip="valid">
+                        <i class="fa-solid fa-gear "></i>
+                    </span>
+                </div>
+                <div class="field">
+                    <input name="Password" class="password" type="password" placeholder="Your Password">
+                    <span class="invalid " tooltip="not valid">
+                        <i class="fa-solid fa-gear "></i>
+                    </span>
+                    <span class="valid " tooltip="valid">
+                        <i class="fa-solid fa-gear "></i>
+                    </span>
+                </div>
+                <input class="submit" type="submit" value="login">
+                <div class="other">
+                    <span>You don't have account, create one</span>
+                    <a href="./sign-up.html">sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="JS/SIGNIN/main.js"></script>
+</body>
+</html>

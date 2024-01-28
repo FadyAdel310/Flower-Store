@@ -1,0 +1,86 @@
+[
+    {
+        "index" : 1,
+        "url" : "./imgs/products/p1.png" ,
+        "heading" : "Lorem ipsum" ,
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." ,
+        "price" : 8.5
+    },
+    {
+        "index" : 2,
+        "url" : "./imgs/products/p2.png" ,
+        "heading" : "Lorem ipsum" ,
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." ,
+        "price" : 8.5
+    },
+    {
+        "index" : 3,
+        "url" : "./imgs/products/p3.png" ,
+        "heading" : "Lorem ipsum" ,
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." ,
+        "price" : 9.5
+    },
+    {
+        "index" : 4,
+        "url" : "./imgs/products/p4.png" ,
+        "heading" : "Lorem ipsum" ,
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." ,
+        "price" : 10
+    },
+    {
+        "index" : 5,
+        "url" : "./imgs/products/p5.png" ,
+        "heading" : "Lorem ipsum" ,
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." ,
+        "price" : 11
+    },
+    {
+        "index" : 6,
+        "url" : "./imgs/products/p6.png" ,
+        "heading" : "Lorem ipsum" ,
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." ,
+        "price" : 12
+    },
+    {
+        "index" : 7,
+        "url" : "./imgs/products/p7.png" ,
+        "heading" : "Lorem ipsum" ,
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." ,
+        "price" : 12.5
+    },
+    {
+        "index" : 8,
+        "url" : "./imgs/products/p8.png" ,
+        "heading" : "Lorem ipsum" ,
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." ,
+        "price" : 11.5
+    },
+    {
+        "index" : 9,
+        "url" : "./imgs/products/p9.png" ,
+        "heading" : "Lorem ipsum" ,
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." ,
+        "price" : 8.5
+    },
+    {
+        "index" : 10,
+        "url" : "./imgs/products/p10.png" ,
+        "heading" : "Lorem ipsum" ,
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." ,
+        "price" : 10.5
+    },
+    {
+        "index" : 11,
+        "url" : "./imgs/products/p11.png" ,
+        "heading" : "Lorem ipsum" ,
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." ,
+        "price" : 9
+    },
+    {
+        "index" : 12,
+        "url" : "./imgs/products/p12.png" ,
+        "heading" : "Lorem ipsum" ,
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." ,
+        "price" : 7.5
+    }
+]

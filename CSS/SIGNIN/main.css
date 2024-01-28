@@ -1,0 +1,249 @@
+.sign-in {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in img {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(5px);
+}
+.sign-in form {
+    background-color: var(--off-white);
+    border-radius: 40px;
+    padding: 30px;
+    box-shadow: 0px 0px 0px 18px #bdbdbd30;
+}
+.sign-in form h2 {
+    padding: 0;
+    margin: 0;
+    font-family: var(--alternate);
+    text-transform: capitalize;
+    color: var(--brown);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 27px;
+}
+.sign-in form input {
+    border: none;
+    outline: none;
+    width: 100%;
+    display: block;
+    border-radius: 40px;
+    height: 55px;
+    margin-bottom: 25px;
+    font-family: var(--alternate);
+    font-size: 24px;
+    line-height: 55px;
+    padding-left: 25px;
+    color: var(--brown);
+    caret-color: var(--brown);
+    transition: var(--main-transition);
+}
+.sign-in form input.name {
+    text-transform: capitalize;
+}
+.sign-in form input::placeholder {
+    text-transform: capitalize;
+    transition: var(--main-transition);
+}
+.sign-in form input:focus::placeholder {
+    opacity: 0;
+}
+.sign-in form input.submit {
+    cursor: pointer;
+    transition: var(--main-transition);
+    color: var(--off-white);
+    background-color: var(--brown);
+    font-weight: 500;
+    padding: 0;
+}
+.sign-in form input.submit:hover {
+    color: var(--white);
+    box-shadow: 0 0 10px 3px var(--white);
+}
+.sign-in form .other {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+.sign-in form .other span {
+    font-size: 20px;
+    font-family: var(--alternate);
+    color: var(--brown);
+    margin: 0 25px;
+    text-align: center;
+}
+.sign-in form .other a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--alternate);
+    font-size: 20px;
+    background-color: var(--off-white);
+    border-radius: 40px;
+    padding: 7px 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray);
+    border: 1px solid var(--brown);
+    transition: var(--main-transition);
+}
+.sign-in form .other a:hover {
+    background-color: var(--white);
+}
+@media (max-width : 768px) {
+    .sign-in form {
+        padding: 30px 20px;
+        box-shadow: 0px 0px 0px 14px #bdbdbd30;
+    }
+    .sign-in .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .sign-in form h2 {
+        font-size: 24px;
+    }
+    .sign-in form input {
+        height: 47px;
+        font-size: 14px;
+        line-height: 47px;
+        padding-left: 17px;
+    }
+    .sign-in form input.submit {
+        font-size: 18px;
+    }
+    .sign-in form .other span ,
+    .sign-in form .other a {
+        font-size: 16px;
+    }
+}
+
+/* validation ====================== */
+
+.sign-in form div.field {
+    position: relative;
+}
+.sign-in form div.field div.hiden {
+    position: absolute;
+    width: 33px;
+    height: 100%;
+    background-color: white;
+    top: 0;
+    right: 0;
+    border-radius: 0 40px 40px 0;
+}
+.sign-in form div.field span {
+    position: absolute;
+    top: calc(50% - 1.5px);
+    padding-top: 3px;
+    right: 25px;
+    transform: translate(0 , -50%);
+    opacity: 0;
+    transition-duration: var(--main-transition);
+    transition-property: opacity;
+    z-index: 1;
+}
+.sign-in form div.field span.invalid {
+    color: #ff0048;
+}
+.sign-in form div.field span.valid {
+    color: #4CAF50;
+}
+.sign-in form div.field span.active {
+    transition-duration: var(--main-transition);
+    transition-property: opacity;
+    opacity: 1;
+    z-index: 3;
+}
+.sign-in form div.field span.active::after {
+    content: attr(tooltip);
+    position: absolute;
+    top: 0.1px;
+    right: 0;
+    display: block;
+    background-color: #ffeaea;
+    text-wrap: nowrap;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 12px;
+    transition: var(--main-transition);
+    border: 1px solid var(--brown);
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: var(--alternate);
+    transform: translate(25px,-100%);
+    opacity: 0;
+}
+.sign-in form div.field span.valid.active::after {
+    right: 51%;
+    transform: translate(50%,-100%);
+    background-color: #eaffea;
+}
+.sign-in form div.field span.active:hover::after {
+    opacity: 1;
+}
+.sign-in form div.field span.active.show::after {
+    opacity: 1;
+}
+
+.sign-in form .num section {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 60px;
+    text-wrap: nowrap;
+    height: 100%;
+    background-color: white;
+    border-radius: 40px 0 0 40px;
+    font-family: var(--alternate);
+    font-size: 24px;
+    line-height: 55px;
+    padding-left: 25px;
+    color: var(--brown);
+    transition: var(--main-transition);
+    opacity: 0;
+}
+
+.sign-in form .num input.phone.focused {
+    letter-spacing: 2px;
+    padding-left: 60px;
+}
+.sign-in form .num input.phone.focused ~ section {
+    opacity: 1;
+}
+
+
+@media (max-width:768px) {
+    .sign-in form div.field span {
+        right: 17px;
+        top: 50%;
+        padding: 0;
+    }
+    .sign-in form div.field span.active::after {
+        top: 0.1px;
+        transform: translate(17px,-100%);
+    }
+    .sign-in form div.field span.valid.active::after {
+        right: 53%;
+    }
+    .sign-in form .num section {
+        line-height: 47px;
+        font-size: 14px;
+        padding-left: 17px;
+        width: 37px;
+    }
+    .sign-in form .num input.phone.focused {
+        letter-spacing: 1px;
+        padding-left: 37px;
+    }
+}

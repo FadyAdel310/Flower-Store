@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- css style sheets -->
+
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    
+    <!-- gooogle fonts -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;500;600;700&family=Montserrat+Alternates:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Flower Store</title>
+</head>
+<body>
+    <div class="over-lay">
+        <div class="fill"></div>
+    </div>
+    <i class="fa-regular fa-arrow-up-from-bracket scroll"></i>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./imgs/logo.png" alt="">
+                <span>Flower Store</span>
+            </div>
+            <i class="fa-solid fa-bars mob-icon"></i>
+            <div class="links">
+                <a href="./index.html" class="home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#videoSection">About</a>
+                <a href="#contact">Contact</a>
+                <a href="/sign-in.html" class="special">Sign In</a>
+            </div>
+            <div class="icons">
+                <i class="fa-regular fa-user tool-tip profile" tool="profile">
+                    <div>
+                        <a href="./sign-in.html">sign In</a>
+                        <a href="./sign-up.html">Sign Up</a>
+                    </div>
+                </i>
+                <i class="fa-solid fa-bag-shopping tool-tip bag not-active" tool="bag shop"></i>
+                <i class="setting-main tool-tip" tool="setting">
+                    <i class="fa-solid fa-gear setting-child"></i>
+                </i>
+            </div>
+        </div>
+    </div>
+    <div class="setting-box">
+        <i class="fa-regular fa-circle-xmark close"></i>
+        <div class="animation">
+            <h3>Animation</h3>
+            <div class="setting-btns">
+                <button class="active" mode="on">On</button>
+                <button mode="off">Off</button>
+            </div>
+        </div>
+        <div class="color">
+            <h3>Main Color</h3>
+            <ul>
+                <li class="active" Dcolor="#c87e6b"></li>
+                <li Dcolor="#e91e63"></li>
+                <li Dcolor="#795548"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="over-shadow"></div>
+    <div class="landing">
+        <div class="container">
+            <div>
+                <img src="./imgs/small-flower.png" class="sudo-small" alt="">
+                <h1>Flower Arrangements</h1>
+                <h3>for all special occasions</h3>
+                <p class="active">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+                <p class="additional" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                <div class="action">
+                    <a href="#products">shop</a>
+                    <button>read more</button>
+                </div>
+            </div>
+        </div>
+        <img src="./imgs/landing.png" class="land-img" alt="">
+        <img src="./imgs/large-flower.png" class="sudo-large" alt="">
+    </div>
+    <div class="stats">
+        <div class="container">
+            <div class="box">
+                <h3>3000</h3>
+                <h4>packages sold</h4>
+            </div>
+            <div class="box">
+                <h3>5000</h3>
+                <h4>Bouquet sold</h4>
+            </div>
+            <div class="box">
+                <h3>7000</h3>
+                <h4>happy clients</h4>
+            </div>
+            <div class="box">
+                <h3>10000</h3>
+                <h4>years of experience</h4>
+            </div>
+        </div>
+    </div>
+    <div id="products" class="products">
+        <div class="container">
+            <img class="left" src="./imgs/normal-flower.png" alt="">
+            <img class="right" src="./imgs/normal-flower.png" alt="">
+            <h2 class="main-heading">
+                Our Top Products
+            </h2>
+            <p class="main-paragraph">
+                Lorem ipsum dolor sit amet, consectetur
+            </p>
+            <div class="items">
+            </div>
+            <div class="action">
+                <img class="left" src="./imgs/normal-flower.png" alt="">
+                <img class="right" src="./imgs/normal-flower.png" alt="">
+                <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="right active"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="product-gallery">
+        <div class="container">
+            <div class="parent">
+                <i class="fa-regular fa-circle-xmark close"></i>
+                <img src="./imgs/products/p1.png" alt="">
+                <div class="info">
+                    <h1 class="heading">Lorem Ipsum</h1>
+                    <p class="price">10$</p>
+                    <form action="./index.php" method="post" target="_blank" >
+                        <div class="hidden">
+                            <input type="number" hidden class="indexInput" name="product-index">
+                            <input type="text" hidden class="PInput" name="price">
+                            <input type="text" hidden class="TPInput" name="total-price">
+                        </div>
+                        <div class="data">
+                            <div class="select">
+                                <label for="QTY">QTY</label>
+                                <select name="quantity" id="QTY">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                            <h2>Total Price : <span class="total-price">10$</span></h2>
+                        </div>
+                        <input class="submit" type="submit" value="Buy This Item">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="videoSection" class="video">
+        <img src="./large-flower.png" class="left" alt="">
+        <img src="./large-flower.png" class="right" alt="">
+        <div class="container">
+            <h2 class="main-heading">
+                How we do it
+            </h2>
+            <p class="main-paragraph">
+                Lorem ipsum dolor sit amet, consectetur
+            </p>
+            <div class="vid">
+                <video src="./v1.mp4" muted >
+                </video>
+                <div class="overLayVid"></div>
+                <img src="./imgs/videoPic.png" alt="">
+                <i class="fa-regular fa-circle-play"></i>
+            </div>
+        </div>
+    </div>
+    <div class="offer">
+        <div class="box">
+            <h4>special offer</h4>
+            <ul>
+                <li><img src="./imgs/normal-flower.png" class="left" alt=""></li>
+                <li><h1>20%</h1></li>
+                <li><img src="./imgs/normal-flower.png" class="right" alt=""></li>
+            </ul>
+            <p>Discount on your <br> first purchase</p>
+        </div>
+        <img src="./imgs/offer.jpg" alt="">
+    </div>
+    <div class="making">
+        <div class="section right">
+            <img src="./imgs/normal-flower.png" alt="">
+            <div class="container">
+                <div class="img">
+                    <img src="./imgs/Doing1.png" alt="">
+                </div>
+                <div class="info">
+                    <img src="./imgs/normal-flower.png" alt="">
+                    <h2>We select the<br>best flowers</h2>
+                    <p class="active">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    <p class="alter">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et, dolor sit amet consectetur adipisicing elit incididunt labore et</p>
+                    <button>read more</button>
+                </div>
+            </div>
+        </div>
+        <div class="section left">
+            <img src="./imgs/normal-flower.png" alt="">
+            <div class="container">
+                <div class="info">
+                    <img src="./imgs/normal-flower.png" alt="">
+                    <h2>We take care<br>of the details</h2>
+                    <p class="active">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    <p class="alter">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et, dolor sit amet consectetur adipisicing elit incididunt labore et</p>
+                    <button>read more</button>
+                </div>
+                <div class="img">
+                    <img src="./imgs/Doing2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section right">
+            <img src="./imgs/normal-flower.png" alt="">
+            <div class="container">
+                <div class="img">
+                    <img src="./imgs/Doing3.png" alt="">
+                </div>
+                <div class="info">
+                    <img src="./imgs/normal-flower.png" alt="">
+                    <h2>We love what<br>we do</h2>
+                    <p class="active">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    <p class="alter">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et, dolor sit amet consectetur adipisicing elit incididunt labore et</p>
+                    <button>read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="container">
+            <form method="post" >
+                <h2>Subscribe to our newsletter</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia unde consequatur soluta consequuntur neque numquam hic nihil repudiandae expedita.
+                </p>
+                <div>
+                    <input class="name" type="text" name="name" placeholder="your name">
+                    <span>This field must be filled, please fill it ..</span>
+                </div>
+                <div>
+                    <input class="email" type="email" name="email" placeholder="mail">
+                    <span>This field must be filled, please fill it ..</span>
+                    <h6>your email not valid, use example@gmail.com</h6>
+                </div>
+                <div>
+                    <textarea class="message" name="message" placeholder="messages"></textarea>
+                    <span>This field must be filled, please fill it ..</span>
+                </div>
+                <input type="submit" value="send message">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="content">
+                <div class="box">
+                    <h1>About</h1>
+                    <h2>history</h2>
+                    <h2>our team</h2>
+                    <h2>mission statement</h2>
+                    <h2>terms&condition</h2>
+                    <h2>privacy policy</h2>
+                </div>
+                <div class="box">
+                    <h1>what we do</h1>
+                    <h2>news and stories</h2>
+                    <h2>publications</h2>
+                    <h2>take action</h2>
+                    <h2>recomendations</h2>
+                    <h2>help</h2>
+                </div>
+                <div class="box">
+                    <h1>your copany</h1>
+                    <h2>Halimun Street 25</h2>
+                    <h2>Jakarta, City 1234</h2>
+                    <h2>www.yourflowersite.com</h2>
+                </div>
+                <div class="follow">
+                    <span>follow us!</span>
+                    <i class="fa-solid fa-gear"></i>
+                    <i class="fa-solid fa-gear"></i>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+</html>
